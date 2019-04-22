@@ -1,0 +1,36 @@
+Update: actualiza la version local
+Checkout: tomamos posesion de la copia local para modificarlo
+Commit/Checkin: Subimos la nueva version
+Discard/Revert: Descartamos los cambios en el local
+
+---------------------------------------------------------
+
+1. clonamos repositorio
+2. pull -> guardo los cambios en el repositorio local (update)
+4. commit en el repositorio local
+3. push -> subo los cambios del repositorio local al remoto
+(antes de hacer un push debemos hacer un commit)
+
+staging area para los archivos que se quieren hacer commit (se maneja con .ignore)
+
+git init
+git remote add origin URLdelrepositorio
+git log
+git status
+git push origin master
+git commit -m "nombre del commit"
+git tag nombredeltag codigohash
+git push origin --tag -> actualiza los tags
+git branch funcionalidad
+git checkout funcionalidad -> cambia a la rama
+git add .
+git commit "nueva funcionalidad"
+git push origin funcionalidad
+git merge master funcionalidad
+
+
+
+
+
+https://github.com/ochndev/bootCampEveris.git
+
